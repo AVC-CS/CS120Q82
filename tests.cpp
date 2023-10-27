@@ -55,4 +55,12 @@ TEST_CASE("Ex2 emailcheck() ", "[example]")
 	INFO("The result should  0\n");
 	REQUIRE(ret == 0);
 	cout << "--------------------------------------------------\n";
+
+	email = "john@company.server.";
+	ret = emailcheck(email);
+	cout << "test email string is " << email << "\tYour return value is: " << ret << endl;
+
+	INFO("The result should  0\n");
+	REQUIRE(ret == 0);
+	cout << "--------------------------------------------------\n";
 }
